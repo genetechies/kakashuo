@@ -210,6 +210,30 @@
                 
 
                 
+                    <!-- Valine -->
+                    <div class="vcomments"></div>
+                    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                    <script src="//cdn.jsdelivr.net/npm/valine"></script>
+                    <script>
+                        var GUEST = ['nick','mail','link'];
+                        var meta = '';
+                        meta = meta.split(',').filter(function (item) {
+                            return GUEST.indexOf(item)>-1;
+                        });
+                        var notify = 'false' == true ? true : false;
+                        var verify = 'false' == true ? true : false;
+                        new Valine({
+                            el: '.vcomments',
+                            notify: notify,
+                            verify: verify,
+                            app_id: "",
+                            app_key: "",
+                            placeholder: "Just go go",
+                            avatar:"mm",
+                            meta:meta
+                        });
+                    </script>
+                
 
             </div>
 
