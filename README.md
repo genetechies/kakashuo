@@ -11,7 +11,7 @@ hexo server
 ## 发布
 
 ```bash
-hexo clean && hexo generate && hexo server
+hexo clean && hexo generate && hexo deploy
 ```
 
 ## 注意事项
